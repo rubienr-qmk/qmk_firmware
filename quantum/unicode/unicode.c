@@ -222,6 +222,7 @@ __attribute__((weak)) void unicode_input_start(void) {
             register_code(UNICODE_KEY_MAC);
             break;
         case UNICODE_MODE_LINUX:
+            wait_ms(UNICODE_TYPE_DELAY);
             tap_code16(UNICODE_KEY_LNX);
             break;
         case UNICODE_MODE_WINDOWS:
