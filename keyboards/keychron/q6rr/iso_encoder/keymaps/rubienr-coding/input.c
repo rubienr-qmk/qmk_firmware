@@ -108,7 +108,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
    */
     switch (keycode) {
         case UC_START: // ----- UTF input mode
-            if (record->event.pressed) ucis_start();
+            if (record->event.pressed) {
+                unregister_code(keycode);
+                ucis_start();
+            }
             break;
         case PR_EMOJI: // ----- print known emoji names
             if (record->event.pressed) {

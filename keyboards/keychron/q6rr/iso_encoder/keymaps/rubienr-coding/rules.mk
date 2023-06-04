@@ -7,7 +7,7 @@ TERMINAL_ENABLE    = yes # command-line-like interface thorough a text editor
 CAPS_WORD_ENABLE   = yes # caps lock -> caps word
 
 # for umlaut and caps lock
-# COMBO_ENABLE     = yes # umlaut
+COMBO_ENABLE       = yes # umlaut
 # TAP_DANCE_ENABLE = yes # umlaut
 
 # unicode and special characters. only one at the same time: UNICODE, UNICODEMAP, UCIS
