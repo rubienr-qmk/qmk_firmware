@@ -8,7 +8,7 @@ CAPS_WORD_ENABLE   = yes # caps lock -> caps word
 
 # for umlaut and caps lock
 # COMBO_ENABLE     = yes # umlaut
-# TAP_DANCE_ENABLE = yes # caps lock
+# TAP_DANCE_ENABLE = yes # umlaut
 
 # unicode and special characters. only one at the same time: UNICODE, UNICODEMAP, UCIS
 #UNICODE_ENABLE    = no  # https://docs.qmk.fm/#/feature_unicode?id=basic-unicode

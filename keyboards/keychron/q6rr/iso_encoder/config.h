@@ -40,6 +40,9 @@
 #define NUM_LOCK_LED_INDEX 37
 
 // unicode and special characters. only one at the same time: UNICODE, UNICODEMAP, UCIS
-#define UCIS_MAX_CODE_POINTS 10
+#define UCIS_MAX_CODE_POINTS 15
 #define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
 #define UNICODE_TYPE_DELAY 20
+
+#define COMBO_MUST_PRESS_IN_ORDER
+#define COMBO_TERM 200
