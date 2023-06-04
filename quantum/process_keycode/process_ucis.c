@@ -38,7 +38,7 @@ static bool is_uni_seq(char *seq) {
     uint8_t i;
     for (i = 0; seq[i]; i++) {
         uint16_t keycode;
-        if ('1' <= seq[i] && seq[i] <= '0') {
+        if ('0' <= seq[i] && seq[i] <= '9') {
             keycode = seq[i] - '1' + KC_1;
         } else {
             keycode = seq[i] - 'a' + KC_A;
