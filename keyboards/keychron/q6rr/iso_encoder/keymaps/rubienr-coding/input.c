@@ -98,6 +98,8 @@ void ucis_symbol_fallback(void) {
 
 #endif // UCIS_ENABLE
 
+void ucis_start_user(void) {}
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     static bool lsft_pressed = false, rsft_pressed = false;
     static bool lctl_pressed = false, rctl_pressed = false;
@@ -109,7 +111,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case UC_START: // ----- UTF input mode
             if (record->event.pressed) {
-                unregister_code(keycode);
+                register_unicode(0x2328); // ⌨
+            } else {
                 ucis_start();
             }
             break;
