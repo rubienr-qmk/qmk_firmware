@@ -1,15 +1,12 @@
 {
     "keyboard_name": "Keychron Q6",
-    "manufacturer": "Keychron",
+    "manufacturer": "rubienr@sbox.tugraz.at",
     "url": "https://github.com/Keychron",
-    "maintainer": "lalalademaxiya1",
+    "maintainer": "rubienr",
     "usb": {
         "vid": "0x3434",
         "pid": "0x0163",
         "device_version": "1.0.0"
-    },
-    "rgb_matrix": {
-        "driver": "ckled2001"
     },
     "encoder": {
         "rotary": [

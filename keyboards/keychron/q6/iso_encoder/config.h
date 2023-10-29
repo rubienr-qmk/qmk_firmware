@@ -37,4 +37,15 @@
 #define CAPS_LOCK_LED_INDEX 60
 
 /* Enable NUM_LOCK_LED_INDEX */
-// #define NUM_LOCK_LED_INDEX 37
+#define NUM_LOCK_LED_INDEX 37
+
+// unicode and special characters. only one at the same time: UNICODE, UNICODEMAP, UCIS
+#define UCIS_MAX_CODE_POINTS 32
+#define UNICODE_SELECTED_MODES UNICODE_MODE_LINUX
+#define UNICODE_TYPE_DELAY 20
+
+#define COMBO_MUST_PRESS_IN_ORDER
+#define COMBO_TERM 200
+
+// enable more debug logs
+// #define ACTION_DEBUG
