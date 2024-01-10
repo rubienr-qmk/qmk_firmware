@@ -10,10 +10,12 @@ bool    active                       = false;
 char    input[UCIS_MAX_INPUT_LENGTH] = {0};
 
 void ucis_start(void) {
-    count  = 0;
-    active = true;
+    if (!active) {
+        count  = 0;
+        active = true;
 
-    register_unicode(0x2328); // ⌨
+        register_unicode(0x2328); // ⌨
+    }
 }
 
 bool ucis_active(void) {
